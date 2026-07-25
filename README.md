@@ -15,6 +15,28 @@
 
 Unlike commercial web analytics extensions, Chronos operates **100% offline and locally on your device**—no remote telemetry, no external database servers, no account registration, and zero data tracking.
 
+**Chronos Time Tracker - Activated**
+
+<img width="300" height="100%"  alt="extension 1" src="https://github.com/user-attachments/assets/1190183f-4f49-482f-a7a3-3110d661564d" />
+
+**Daily Browsing Activity**
+
+<img width="600"  height="100%" alt="extension 2" src="https://github.com/user-attachments/assets/f8390171-ece0-4d0f-bdaf-9dc875a6e612" />
+
+**Weekly Screentime Trends**
+
+<img width="600"  height="100%" alt="extension 3" src="https://github.com/user-attachments/assets/d63bf2fc-0e8f-4821-83c1-7fb04cc6c88d" />
+
+**Monthly Screentime Heatmap**
+
+<img width="600"  height="100%" alt="extension 4" src="https://github.com/user-attachments/assets/886ae7da-87cf-4172-a07d-5f75cdac0bd9" />
+
+**Category Settings**
+
+<img width="600"  height="100%" alt="extension 5" src="https://github.com/user-attachments/assets/fa9e94bc-9957-46c2-aeaf-966281a6e8fd" />
+
+
+
 ---
 
 ## ⚡ How It Works
