@@ -1,0 +1,157 @@
+:root {
+  --bg-dark: #0b0c10;
+  --bg-card: #1f2833;
+  --text-primary: #ffffff;
+  --text-secondary: #c5c6c7;
+  --accent-color: #66fcf1;
+  --accent-secondary: #45f3ff;
+  --productivity-color: #4cd137;
+  --social-color: #00a8ff;
+  --entertainment-color: #e84118;
+  --news-color: #fbc531;
+  --shopping-color: #9c88ff;
+  --other-color: #7f8fa6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  width: 320px;
+  overflow: hidden;
+}
+
+.popup-container { padding: 16px; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 12px;
+}
+
+.logo { display: flex; align-items: center; gap: 8px; }
+.logo-icon { color: var(--accent-color); animation: pulse 2s infinite alternate; }
+
+@keyframes pulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 2px var(--accent-color)); }
+  100% { transform: scale(1.1); filter: drop-shadow(0 0 6px var(--accent-color)); }
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--text-primary), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.5px;
+}
+
+#open-dashboard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#open-dashboard:hover {
+  background: rgba(102, 252, 241, 0.1);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-1px);
+}
+
+.hero-stats {
+  background: linear-gradient(135deg, rgba(31, 40, 51, 0.6) 0%, rgba(11, 12, 16, 0.8) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-stats::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+.hero-stats .label {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.total-time {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 4px;
+  color: var(--accent-color);
+  text-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
+}
+
+h3 {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.category-breakdown { margin-bottom: 16px; }
+.category-bars { display: flex; flex-direction: column; gap: 8px; }
+.cat-bar-container { display: flex; flex-direction: column; gap: 4px; }
+.cat-info { display: flex; justify-content: space-between; font-size: 11px; }
+.cat-name { color: var(--text-secondary); }
+.cat-time { font-weight: 600; }
+.bar-bg { background: rgba(255, 255, 255, 0.05); height: 6px; border-radius: 3px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 3px; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.top-sites { margin-top: 16px; }
+.sites-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.site-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.site-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(2px);
+}
+
+.site-domain-box { display: flex; align-items: center; gap: 8px; max-width: 70%; }
+.site-favicon { width: 16px; height: 16px; border-radius: 3px; }
+.site-domain { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.site-time-box { display: flex; align-items: center; gap: 6px; }
+.site-time { font-weight: 600; }
+.site-dot { width: 6px; height: 6px; border-radius: 50%; }

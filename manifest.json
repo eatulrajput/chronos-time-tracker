@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Chronos Time Tracker",
+  "version": "1.0.0",
+  "description": "A privacy-first, 100% local screen-time tracker and website categorizer.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "idle",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "dashboard.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
